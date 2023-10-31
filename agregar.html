@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Agregar datos</title>
+</head>
+
+<body>
+	<a href="index.php">Inicio</a> | <a href="ver.php">Ver Productos</a> | <a href="cerrar.php">Cerrar Sesion</a>
+	<br/><br/>
+
+	<form name="form1" method="post" action="agregar.php">
+		<table border="0">
+			<tr>
+				<td>ID Ventas</td>
+				<td><input type="text" name="id_ventas"></td>
+			</tr>
+			<tr>
+				<td>id ventas cliente</td>
+				<td><input type="text" name="id_ventas_cliente"></td>
+			</tr>
+			<tr>
+				<td>id empleado</td>
+				<td><input type="text" name="id_empleado"></td>
+			</tr>
+			<tr>
+				<td>fecha venta</td>
+				<td><input type="date" name="fecha_venta"></td>
+			</tr>
+			<tr>
+				<td>Precio tota</td>
+				<td><input type="number" name="precio_total"></td>
+			</tr>
+			<tr>
+				<td>extras</td>
+				<td><input type="text" name="extras"></td>
+			</tr>
+			<tr>
+				<td>vin</td>
+				<td><input type="text" name="vin"></td>
+			</tr>
+			<tr>
+				<td>Descuento</td>
+				<td><input type="number" name="descuento"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="inicio_id" value="<?php echo $_GET['inicio_id']; ?>"></td>
+				<td><input type="submit" name="update" value="agregar"></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+</body>
+</html>
